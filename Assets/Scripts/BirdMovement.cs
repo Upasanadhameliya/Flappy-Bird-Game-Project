@@ -8,6 +8,7 @@ public class BirdMovement : MonoBehaviour {
     public float force;
     public float gravity = 1f;
     private bool canJump = true;
+    private bool isBirdHit = false;
     private bool jumping = false;
     public float coolDownTime = 0.5f;
     private bool isGameOver = false;
@@ -17,7 +18,7 @@ public class BirdMovement : MonoBehaviour {
     {
         if (!isGameOver)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && !isBirdHit)
             {
                 if (canJump)
                 {
@@ -63,6 +64,7 @@ public class BirdMovement : MonoBehaviour {
     public void StopBirdJump()
     {
         //Debug.Log("Bird Jump Stopped");
+        isBirdHit = true;
         canJump = false;
     }
 

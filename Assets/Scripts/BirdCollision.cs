@@ -26,6 +26,7 @@ public class BirdCollision : MonoBehaviour {
         //Debug.Log("Collision");
         gameObject.GetComponent<BirdMovement>().StopBirdJump();
         gameUI.StopTimer();
+        gameController.BirdHit();
 
         foreach(GameObject upperPipe in upperPipes)
         {

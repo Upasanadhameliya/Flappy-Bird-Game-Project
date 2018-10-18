@@ -11,6 +11,22 @@ TagManager:
   - Background
   - LowerPipe
   - Canvas
+  - TapImage
+  - GetReadyImage
+  - CountDownTimer
+  - GameOverImage
+  - ScoreBoard
+  - Bronze
+  - Silver
+  - Gold
+  - Platinum
+  - ScoreText
+  - BestScoreText
+  - RetryButton
+  - BronzeText
+  - SilverText
+  - GoldText
+  - PlatinumText
   layers:
   - Default
   - TransparentFX
